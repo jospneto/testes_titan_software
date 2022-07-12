@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(aqua, aquamarine);
+    font-family: 'Anton', sans-serif;
+    overflow-y: visible;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.tabela table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tabela button{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.tabela th{ 
+    padding: 25px;
+    width: 25%;
+}
+
+.tabela td{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}

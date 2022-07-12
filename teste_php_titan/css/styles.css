@@ -5,7 +5,7 @@
 body{
     background-image: linear-gradient(aqua, aquamarine);
     font-family: 'Anton', sans-serif;
-    overflow-y: visible;
+    overflow-y: hidden;
     height: 100vh;
 }
 
@@ -15,7 +15,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: aliceblue;
-    width: 30%;
+    width: 100%;
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
