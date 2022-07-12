@@ -29,6 +29,7 @@
             </section>
         </section>
         <button id="buttons"><a href="listaProdutos.php">LISTAR PRODUTOS</a></button>
+        </form>
         <footer class="rodape">
             <ul>
                 <li><img src="./img/Instagram.png" alt=""></li>
