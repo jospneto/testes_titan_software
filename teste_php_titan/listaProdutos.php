@@ -16,6 +16,7 @@
                 <th>Nome</th>
                 <th>Cor</th>
                 <th>Preço</th>
+                <th>Desconto</th>
             </thead>
             <tbody>
                 <?php
@@ -30,8 +31,21 @@
                         echo '<td>'.$codigoProd =  $produto['idprod'].'</td>';
                         echo '<td>'.$nome =  $produto['nome'].'</td>';
                         echo '<td>'.$cor =  $produto['cor'].'</td>';
-                        echo '<td>'.$codigoPreco =  $produto['idpreco'].'</td>';
-                        echo '<td> R$'.$preco =  $produto['preco'].'</td>';
+                        echo '<td> R$'.number_format($preco =  $produto['preco'], 2, ',', '.').'</td>';
+                        if(strtoupper($cor) === 'AZUL' or strtoupper($cor) === 'VERMELHO'){
+                            $desconto = $preco * 0.20;
+                            $descontoFinal = $preco - $desconto;
+                            echo '<td> R$'.$descontoFinal.'</td>';
+                        }else if(strtoupper($cor) === 'AMARELO'){
+                            $desconto = $preco * 0.10;
+                            $descontoFinal = $preco - $desconto;
+                            echo '<td> R$'.$descontoFinal.'</td>';
+                        }else if(strtoupper($cor) === 'AMARELO' and $preco > 50){
+                            $desconto = $preco * 0.05;
+                            $descontoFinal = $preco - $desconto;
+                            echo '<td> R$'.number_format($descontoFinal, 2, ',', '.').'</td>';
+                        }
+                        echo '<td> R$'.number_format($descontoFinal, 2, ',', '.').'</td>';
                         echo '</tr>';
                     }
                 ?>
