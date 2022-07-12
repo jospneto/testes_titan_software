@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(aqua, aquamarine);
+    font-family: 'Anton', sans-serif;
+    overflow-y: visible;
+    height: 100vh;
+}
+
+.tabela table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 30%;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tabela button{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.tabela th{ 
+    padding: 25px;
+    width: 25%;
+}
+
+.tabela td{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.main button{
+    background-image: linear-gradient(aqua, aquamarine);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 10%;
+    cursor: pointer;
+}
+
+.main a{
+    text-decoration: none;
+    color: black;
+}
+
+.produtos{
+    background-color: azure;
+    width: 25%;
+    height: 500px;
+    text-align: center;
+    border-radius: 8px;
+    color: aquamarine;
+    text-shadow: 0rem 0.1rem 0.2rem black;
+}
+
+.produtos img{
+    max-width: 50%;
+    height: 150px;
+}
+
+.precos img{
+    max-width: 50%;
+    height: 150px;
+}
+
+.precos{
+    background-color: azure;
+    width: 25%;
+    height: 500px;
+    text-align: center;
+    border-radius: 8px;
+    color: aquamarine;
+    text-shadow: 0rem 0.1rem 0.2rem black;
+}
+
+#buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#buttons button{
+    background-image: linear-gradient(aqua, aquamarine);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+#buttons a{
+    width: 50%;
+}
+
+#buttons button:hover{
+    background-image: linear-gradient(aliceblue, aliceblue);
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(aqua, aquamarine, aliceblue);
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    position: absolute;
+}
+
+.rodape ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    text-shadow: 0rem 0.1rem 0.2rem black;
+}
+
+.rodape li{
+    padding: 5px;
+}
+
+.rodape h1{
+    color: aqua;
+}
+
+.rodape a{
+    color: aqua;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rodape a:hover{
+    color: aqua
+}
